@@ -7,5 +7,8 @@ try:
     print(baca.read())
 
 except FileNotFoundError:
-    print("File tidak ditemukan")
+    print("!!File tidak ditemukan!!")
+
+except PermissionError:
+    print("!!Salah dalam penulisan!!")
 
