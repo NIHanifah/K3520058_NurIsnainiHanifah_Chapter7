@@ -6,9 +6,11 @@ try:
     baca = open(cariFile)
     print(baca.read())
 
+#jika data tidak ditemukan
 except FileNotFoundError:
     print("!!File tidak ditemukan!!")
 
-except PermissionError:
+#jika salah dalam penulisan
+except SyntaxError:
     print("!!Salah dalam penulisan!!")
 

@@ -1,3 +1,6 @@
 #menampilkan data pada file
-file = open ("c:/halo.txt", "r")
-print (file.read())
+try:
+    file = open ("c:/halo.txt", "r")
+    print (file.read())
+except FileNotFoundError:
+    print("File tidak ada")

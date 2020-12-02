@@ -6,5 +6,6 @@ try:
         sum = sum + int(data)
     print(sum)
 
+#jika nilai salah
 except ValueError:
     print("Tidak bisa penjumlahan string dan integer")

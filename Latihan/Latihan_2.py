@@ -1,8 +1,5 @@
 #Menambahkan data pada file
 
-a = "y"
-b = "n"
-
 data = input("Masukkan nama file : ")
 file = open(data, "a")
 
@@ -11,9 +8,9 @@ def tambahData():
     dataTambahan = input("Data yang mau ditambahkan : ")
     file.write(dataTambahan)
     tanya = input("Mau lagi (y/n) : ")
-    if tanya == a:
+    if tanya == "y" or tanya == "Y":
         tambahData()
-    elif tanya == b:
+    elif tanya == "n" or tanya == "N":
         file.close()
 
 tambahData()
